@@ -8,9 +8,14 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <div>
   <h1>My Goals</h1>
-  <p>My goal for today is {{ goal }}</p>
+  <hr>
+  <ul>
+      <li *ngFor='let goal of goals'>
+        {{goal.name}}
+      </li>
+  </ul>
+  <p *ngIf='goals.length > 5'>Your goals are too many</p>
 </div>
-
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
