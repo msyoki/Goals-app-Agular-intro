@@ -6,16 +6,7 @@
 <!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<div>
-  <h1>My Goals</h1>
-  <hr>
-  <ul>
-      <li *ngFor='let goal of goals'>
-        {{goal.name}}
-      </li>
-  </ul>
-  <p *ngIf='goals.length > 5'>Your goals are too many</p>
-</div>
+<app-goal></app-goal>
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
