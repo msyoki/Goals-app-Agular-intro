@@ -8,15 +8,16 @@
             <div *ngFor='let goal of goals;let i = index'>
                 <div >
                     <h5 appStrikethrough>{{goal.name}} due on {{goal.completeDate|date|uppercase}}</h5> 
-                    <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
+                    <button (click)='toggleDetails(i)' class="btn btn-info">Toggle Details</button>
                 </div><br>
                 <div *ngIf='goal.showDescription'>
                     <app-goal-detail  [goal]='goal'(isComplete)= 'completeGoal($event,i)'></app-goal-detail>
                 </div>
             </div>
         </div>
-    </div>
+    </div><br>
+    <p *ngIf='goals.length > 5'>You have too many pending goals!!!</p><br>
     <div id="footer">
-        <p *ngIf='goals.length > 5'>You have too many pending goals!!!</p>
+        <p>Copyright © 2020 Angular Test-Musyoki Mutua  </p>
     </div>
 </div>
