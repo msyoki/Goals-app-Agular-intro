@@ -18,6 +18,7 @@ export class GoalComponent implements OnInit {
   toggleDetails(index){
     this.goals[index].showDescription = !this.goals[index].showDescription;
   }
+  
   constructor() { }
 
   ngOnInit(): void {

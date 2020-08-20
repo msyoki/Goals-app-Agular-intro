@@ -1,0 +1,28 @@
+
+.container{
+ background-color: #173F5F;
+ color: white;
+ font-family: Arial, Helvetica, sans-serif;
+ text-align: center;
+ padding: 20px;
+ margin: 0px,0px;
+}
+.container app-goal-detail{
+    color: #F6D55C;
+    font-weight: bold;
+}
+
+#header ,h1{
+    font-weight: bold;
+    background-color: #F6D55C;
+    color: #173F5F;
+    padding: 20px;
+    border-radius: 25px;
+    
+}
+#footer ,p{
+    font-weight: bold;
+    background-color: #F6D55C;
+    color: #ED553B;
+    padding: 20px;
+}

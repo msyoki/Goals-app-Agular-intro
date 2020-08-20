@@ -10,7 +10,7 @@ export class GoalDetailComponent implements OnInit {
 
   @Input() goal: Goal;
   constructor() { }
-
+  
   ngOnInit() {
   }
 
